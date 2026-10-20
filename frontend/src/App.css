@@ -1,0 +1,101 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f5ff;
+  color: #263253;
+}
+
+.App {
+  text-align: center;
+}
+
+.container {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px #dce2f0;
+}
+
+h1 {
+  color: #4b57c5;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 30px;
+  color: #333f70;
+}
+
+input {
+  padding: 12px;
+  width: 65%;
+  border: 1px solid #ccd2e8;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+button {
+  padding: 12px 16px;
+  margin-left: 8px;
+  background: #5865d8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #3947b5;
+}
+
+.student {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  margin: 12px 0;
+  background: #f6f7ff;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.present {
+  color: #169b62;
+}
+
+.absent {
+  color: #e34e5c;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 20px 12px;
+    padding: 20px;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    margin: 5px;
+  }
+
+  .student {
+    flex-wrap: wrap;
+  }
+}
